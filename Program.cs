@@ -122,13 +122,6 @@ builder.Services.AddSwaggerGen(options =>
     });
 });
 
-/// <summary>
-/// Obtiene la cadena de conexión a la base de datos MySQL desde la configuración de la aplicación.
-/// </summary>
-/// <remarks>
-/// El valor se extrae de la sección "ConnectionStrings" del archivo `appsettings.json`,
-/// buscando la clave "DefaultConnection".
-/// </remarks>
 var connectionString = builder.Configuration.GetConnectionString("DefaultConnection");
 
 if (connectionString is null)
