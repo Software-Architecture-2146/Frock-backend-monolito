@@ -10,13 +10,14 @@ RUN apt-get update \
 ARG BUILD_CONFIGURATION=Release
 WORKDIR /src
 
-# Copia y restaura tu .csproj
-COPY ["Frock-backend/Frock-backend.csproj", "Frock-backend/"]
-RUN dotnet restore "Frock-backend/Frock-backend.csproj"
+# CAMBIADO: Copia el .csproj desde la raíz del contexto
+COPY ["Frock-backend.csproj", "./"]
+RUN dotnet restore "Frock-backend.csproj"
 
-# Copia todo y compila
+# Copia todo el código
 COPY . .
-WORKDIR "/src/Frock-backend"
+
+# CAMBIADO: Ya estamos en /src, no necesitas cambiar de directorio
 RUN dotnet build "Frock-backend.csproj" \
     -c $BUILD_CONFIGURATION \
     -o /app/build
