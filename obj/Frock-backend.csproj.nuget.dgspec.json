@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\fundamentos\\Frock-backend-monolito\\Frock-backend.csproj": {}
+    "I:\\Frock-backend-monolito\\Frock-backend.csproj": {}
   },
   "projects": {
-    "D:\\fundamentos\\Frock-backend-monolito\\Frock-backend.csproj": {
+    "I:\\Frock-backend-monolito\\Frock-backend.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\fundamentos\\Frock-backend-monolito\\Frock-backend.csproj",
+        "projectUniqueName": "I:\\Frock-backend-monolito\\Frock-backend.csproj",
         "projectName": "Frock-backend",
-        "projectPath": "D:\\fundamentos\\Frock-backend-monolito\\Frock-backend.csproj",
+        "projectPath": "I:\\Frock-backend-monolito\\Frock-backend.csproj",
         "packagesPath": "C:\\Users\\USUARIO\\.nuget\\packages\\",
-        "outputPath": "D:\\fundamentos\\Frock-backend-monolito\\obj\\",
+        "outputPath": "I:\\Frock-backend-monolito\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\USUARIO\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -152,7 +152,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.308/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Users\\USUARIO\\.dotnet\\sdk\\9.0.301/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

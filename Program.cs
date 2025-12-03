@@ -209,11 +209,14 @@ builder.Services.AddCors(options =>
 {
     options.AddDefaultPolicy(policy =>
     {
-        policy.WithOrigins("http://localhost:5173", "https://deft-tapioca-c27a9c.netlify.app", "https://frock-front-end.vercel.app")//ajustar
-              .AllowAnyHeader()
-              .AllowAnyMethod();
+        policy.WithOrigins(
+                "http://localhost:5173",
+                "https://frock-backend.onrender.com"  // ⬅️ AGREGAR ESTO (ajustaremos la URL exacta después)
+            )
+            .AllowAnyHeader()
+            .AllowAnyMethod();
     });
-});
+});;
 
 // Cloudinary Configuration
 builder.Services.Configure<CloudinarySettings>(builder.Configuration.GetSection("Cloudinary"));
