@@ -2,8 +2,8 @@
   - type: web
     name: frock-backend
     runtime: docker
-    repo: https://github.com/TU_USUARIO/TU_REPO_BACKEND.git  # ⚠️ CAMBIAR ESTO
-    branch: main  # o master, según tu rama principal
+    repo: https://github.com/Software-Architecture-2146/Frock-backend-monolito.git
+    branch: main
     dockerfilePath: ./Dockerfile
     dockerContext: .
     envVars:
@@ -12,9 +12,9 @@
       - key: ASPNETCORE_URLS
         value: http://+:8080
       - key: ConnectionStrings__DefaultConnection
-        sync: false  # Lo configuraremos manualmente en Render
+        value: server=mysql.railway.internal;port=3306;user=root;password=MOqOhTHKwcmajaCEWcGPljyEWOYNmaEO;database=railway
       - key: TokenSettings__Secret
-        generateValue: true  # Render generará un valor aleatorio
+        generateValue: true
       - key: Cloudinary__CloudName
         value: dyv3r7pnw
       - key: Cloudinary__ApiKey
