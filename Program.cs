@@ -211,7 +211,7 @@ builder.Services.AddCors(options =>
     {
         policy.WithOrigins(
                 "http://localhost:5173",
-                "https://frock-frontend.vercel.app/",
+                "https://frock-frontend.vercel.app",
                 "https://frock-backend-monolito.onrender.com" // ⬅️ AGREGAR ESTO (ajustaremos la URL exacta después)
                 
             )
