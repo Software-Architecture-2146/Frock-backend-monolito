@@ -216,7 +216,8 @@ builder.Services.AddCors(options =>
                 
             )
             .AllowAnyHeader()
-            .AllowAnyMethod();
+            .AllowAnyMethod()
+            .AllowCredentials();
     });
 });;
 
@@ -261,7 +262,7 @@ app.UseSwaggerUI(c =>
     c.DocExpansion(Swashbuckle.AspNetCore.SwaggerUI.DocExpansion.None);
 });
 
-app.UseHttpsRedirection();
+//app.UseHttpsRedirection();
 app.UseRouting(); // Si no está implícito
 app.UseRequestAuthorization(); // Tu middleware personalizado
 app.UseAuthorization(); // Authorization de ASP.NET Core
